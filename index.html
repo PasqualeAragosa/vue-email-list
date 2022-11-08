@@ -15,9 +15,11 @@
 <body>
 
     <div id="app">
-        <p v-if="arrayEmails.length === 10">
-            {{arrayEmails}}
-        </p>
+        <ul v-if="arrayEmails.length === 10">
+            <li class="list-unstyled" v-for="(email, index) in arrayEmails">
+                {{email}}
+            </li>
+        </ul>
     </div>
     <!-- /#app -->
     
