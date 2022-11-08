@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Vue Hello</title>
+    <title>E-mail Random List</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +15,17 @@
 <body>
 
     <div id="app">
-        <ul v-if="arrayEmails.length === 10">
-            <li class="list-unstyled" v-for="(email, index) in arrayEmails">
-                {{email}}
-            </li>
-        </ul>
+        <div class="wrapper text-center p-4">
+            <h1>
+                E-mail Random List
+            </h1>
+            <ul v-if="arrayEmails.length === 10">
+                <li class="list-unstyled" v-for="(email, index) in arrayEmails">
+                    {{email}}
+                </li>
+            </ul>
+        </div>
+        <!-- /.wrapper -->
     </div>
     <!-- /#app -->
     

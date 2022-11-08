@@ -9,7 +9,6 @@ createApp({
     data() {
         return {
             arrayEmails: [],
-            email: null,
         }
     },
     mounted() {
