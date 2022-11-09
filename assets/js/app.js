@@ -9,10 +9,11 @@ createApp({
     data() {
         return {
             arrayEmails: [],
+            arraySize: 10,
         }
     },
     mounted() {
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < this.arraySize; i++) {
             axios 
         .get('https://flynn.boolean.careers/exercises/api/random/mail')
         .then(response => {

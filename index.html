@@ -19,7 +19,7 @@
             <h1>
                 E-mail Random List
             </h1>
-            <ul v-if="arrayEmails.length === 10">
+            <ul v-if="arrayEmails.length === this.arraySize">
                 <li class="list-unstyled" v-for="(email, index) in arrayEmails">
                     {{email}}
                 </li>
